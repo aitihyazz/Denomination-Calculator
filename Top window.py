@@ -1,0 +1,16 @@
+from tkinter import *
+window =Tk()
+window.geometry("400x300")
+window.title("Top window")
+def twindow():
+    top=Toplevel()
+    top.geometry("120x100")
+    top.title("Top")
+    lb2= Label(top,text="This is top")
+    lb2.pack()
+    top.mainloop()
+l=Label(window,text="This the the bottom")
+btn=Button(window,text="Chick here",command=twindow)
+l.pack()
+btn.pack()
+window.mainloop()
